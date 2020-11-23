@@ -14,7 +14,11 @@ class Home extends Component {
           </div>
         </div>
         <div className="scroll-down-arrow">
-         
+          <section id="section10" className="demo">
+            <a href="#thanks">
+              <span></span>
+            </a>
+          </section>
         </div>
       </div>
     );

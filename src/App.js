@@ -5,6 +5,7 @@ import ColorPalet from "./components/colorPalet"
 import "./css/header.css"
 import "./css/home.css";
 import "./css/sidenav.css";
+import "./css/about.css"
 import SideNav from "./components/sideNav";
 
 class App extends React.Component {
