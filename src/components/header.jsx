@@ -9,7 +9,10 @@ import { MdEmail } from "react-icons/md";
 class header extends Component {
   state = {};
   render() {
+    const {onToggleSideNav,sideNavOpened, onCloseSideNav} = this.props
     return (
+      <>
+      {sideNavOpened && <div className="side-nav-overlay" onClick={onCloseSideNav}></div>}
       <div className="header-main-container">
           {/* <div className="badge-main-container">
               <span>Best Developpers</span>
@@ -121,7 +124,7 @@ class header extends Component {
               </li>
             </ul>
             <div className="menu-humberger">
-              <div className="humberger-round">
+              <div className="humberger-round" onClick={onToggleSideNav}>
                 <IconContext.Provider
                   value={{ className: "menu-humberger-icon" }}
                 >
@@ -132,6 +135,7 @@ class header extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }

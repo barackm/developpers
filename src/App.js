@@ -3,18 +3,30 @@ import Header from "./components/header"
 import Home from "./components/home";
 import ColorPalet from "./components/colorPalet"
 import "./css/header.css"
-import "./css/home.css"
+import "./css/home.css";
+import "./css/sidenav.css";
+import SideNav from "./components/sideNav";
 
 class App extends React.Component {
  
+  state={
+    sideBarOpened: false
+  }
+  handleToggleSideBar=()=>{
+    this.setState({sideBarOpened: ! this.state.sideBarOpened})
+  }
+  handleCloseSideBar=()=>{
+    this.setState({sideBarOpened: false})
+  }
 
-  render() {
-    
+    render() {
+    const {sideBarOpened}= this.state
     return (
       <React.Fragment>
-        <Header />
+        <Header sideNavOpened={sideBarOpened} onToggleSideNav={this.handleToggleSideBar} onCloseSideNav={this.handleCloseSideBar}/>
         <Home />
         <ColorPalet />
+        <SideNav sideNavOpened={sideBarOpened}/>
       </React.Fragment>
     );
   }
