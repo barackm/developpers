@@ -95,7 +95,7 @@ class About extends Component {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
               quasi cum nemo soluta laudantium.
             </p>
-            <div className="learn-more-btn">Explore</div>
+            <div className="learn-more-btn">Explore more</div>
           </div>
         </div>
 
