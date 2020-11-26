@@ -1,26 +1,29 @@
-// "use strict";
 
-// let slides = document.querySelectorAll('#all_slides .slide');
-// let currentSlide = 0;
-// console.log(slides)
-// const nextSlide = () => {
-//     goToSlide(currentSlide + 1);
-// }
+    window.onload = ()=>{
+        window.onscroll = ()=>{
+        navigationScroll()
+        sidebarScroll()
+        }
+    
+    }
 
-// const previousSlide = () => {
-//     goToSlide(currentSlide - 1);
-// }
+    const navigationScroll = ()=>{
+        const navbar = document.querySelector(".header-main-container");
+        const scrollHeight = window.scrollY;
+        if(scrollHeight > 100){
+          navbar.classList.add('scrolling');
+          console.log(navbar)
+        }else{
+          navbar.classList.remove("scrolling");
+        }
+    }
 
-
-// let slideInterval = setInterval(nextSlide, 6100);
-
-// const goToSlide = (s) => {
-//     slides[currentSlide].className = 'slide';
-//     currentSlide = (s + slides.length) % slides.length;
-//     slides[currentSlide].className = 'slide active';
-// }
-
-
-// // let playing = true;
-
-// console.log("dev tool active")
+    const sidebarScroll = ()=>{
+        const sidebar = document.querySelector(".sidenav-main-container");
+        const scrollHeight = window.scrollY;
+        if(scrollHeight < 100){
+            sidebar.classList.add('scrolling');
+        }else{
+            sidebar.classList.remove("scrolling");
+        }
+    }

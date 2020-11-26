@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { IconContext } from 'react-icons'
-import { FaChevronRight, FaMapMarked, FaMapMarker, FaMapMarkerAlt, FaMapPin, FaPhone, FaPhoneAlt } from 'react-icons/fa'
+import { FaChevronRight, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
 
 class SideNav extends Component {
     state = {  }
+    componentDidMount() {
+       
+    }
+    
     render() { 
         const {sideNavOpened}= this.props
         return ( <div className={sideNavOpened ? "sidenav-main-container open" : "sidenav-main-container"}>

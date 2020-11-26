@@ -8,16 +8,20 @@ import { AiTwotoneLike, AiTwotoneStar,AiOutlineMenuFold } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 class header extends Component {
   state = {};
+  componentDidMount() {
+    
+  }
+  
+  changeHeader = ()=>{
+  }
   render() {
     const {onToggleSideNav,sideNavOpened, onCloseSideNav} = this.props
     return (
       <>
       {sideNavOpened && <div className="side-nav-overlay" onClick={onCloseSideNav}></div>}
-      <div className="header-main-container">
-          {/* <div className="badge-main-container">
-              <span>Best Developpers</span>
-          </div> */}
-        <div className="header-links-wrapper">
+      <div className="header-main-container" id="navigation">
+          
+        <div className="header-links-wrapper"  >
           <div className="links">
             <div className="social-media">
               <IconContext.Provider value={{ className: "header-icon" }}>

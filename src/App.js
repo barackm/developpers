@@ -1,12 +1,19 @@
 import React from "react";
+
+import About from "./components/about";
+import ColorPalet from "./components/colorPalet"
 import Header from "./components/header"
 import Home from "./components/home";
-import ColorPalet from "./components/colorPalet"
+import SideNav from "./components/sideNav";
+
 import "./css/header.css"
 import "./css/home.css";
 import "./css/sidenav.css";
-import "./css/about.css"
-import SideNav from "./components/sideNav";
+import "./css/about.css";
+import "./css/responsiveWeb.css";
+import "./css/services.css"
+
+import Services from "./components/services";
 
 class App extends React.Component {
  
@@ -28,6 +35,8 @@ class App extends React.Component {
         <Home />
         <ColorPalet />
         <SideNav sideNavOpened={sideBarOpened}/>
+        <About />
+        <Services />
       </React.Fragment>
     );
   }

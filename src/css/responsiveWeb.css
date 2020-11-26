@@ -1,0 +1,17 @@
+.responsive-web-main-container{
+    width: 100%;
+    position: relative;
+    height: 500px;
+    background-image: url("../images/bg_08.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.responsive-web-main-container .content h1{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+}

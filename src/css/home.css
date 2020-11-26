@@ -69,10 +69,12 @@
     transform: translateY(40%);
     display: flex;
     align-items: center;
-    transform: translate(-250px, 40%);
+    transform: translate(-252px, 40%);
     transition: all 0.3s ease-in;
     flex-direction: column;
-    
+    border: 1px solid #cccccc;
+    z-index: 999999;
+
   }
   .color-palet-main-container.shown{
     transform: translate(0, 40%);
@@ -105,6 +107,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #cccccc;
+    border-left: none;
   }
   .icon-cog{
     font-size: 20px;

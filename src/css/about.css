@@ -1,0 +1,244 @@
+.about-page-main-container{
+    display: flex;
+    width: 100%;
+    min-height: 800px;
+    /* background-image: url("../images/about-hero.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    justify-content: center;
+    padding-top: 150px;
+    flex-direction: column;
+}
+.about-main-area{
+    display: flex;
+}
+.about-page-main-container .about-left-side-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 100px;
+}
+.about-page-main-container .about-left-side-container .header{
+    display: flex;
+    align-items: center;
+
+}
+.about-page-main-container .about-left-side-container .header .line{
+    width: 50px;
+    height: 3px;
+    background-color:  #000;
+    margin-right: 10px;
+}
+
+.about-page-main-container .about-left-side-container .header h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color:  #000;
+}
+.about-page-main-container .about-left-side-container .impact-area{
+
+}
+.about-page-main-container .about-left-side-container .impact-area h1{
+    text-transform: uppercase;
+    font-size: 75px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.about-page-main-container .about-left-side-container .impact-area h1 .dot{
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    margin-bottom: -13px;
+}
+
+
+.about-page-main-container .about-left-side-container .details-area{
+    width: 70%;
+}
+.about-page-main-container .about-left-side-container .details-area p{
+    font-size: 20px;
+    line-height: 1.7;
+}
+.about-page-main-container .about-left-side-container .scroll-down-area{
+    margin-top: 50px;
+}
+
+.about-page-main-container .about-left-side-container .scroll-down-area .scroll-down-container{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+.about-page-main-container .about-left-side-container .scroll-down-area .scroll-down-container .scroll-arrow-about{
+    font-size: 20px;
+    animation: animateArrow 1s linear infinite;
+}
+@keyframes animateArrow {
+    from{
+        transform: translateY(-5px);
+    }to{
+        transform: translateY(5px);
+
+    }
+}
+.about-page-main-container .right-area-contaner{
+    display: flex;
+    justify-content: center;
+}
+.about-page-main-container .right-area-contaner .image-wrapper{
+    margin-right: 100px;
+}
+
+
+.about-page-main-container .about-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about-page-main-container .about-details .items-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.about-page-main-container .about-details .items-grid .item-container .header h1{
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.about-page-main-container .about-details .items-grid .item-container .header h3{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.about-page-main-container .about-details .items-grid .item-container .details p{
+    font-size: 20px;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.63);
+
+}
+
+.who-we-are-area{
+    display: flex;
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.who-we-are-area .left-area {
+    width: 55%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.who-we-are-area .left-area .vertical-image{
+    width: 50%;
+    background-image: url("../images/about_1.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.who-we-are-area .left-area .horizontal-image{
+    width: 70%;
+    height:250px;
+    background-image: url("../images/about_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 25%;
+}
+.who-we-are-area .right-area{
+    width: 40%;
+    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.who-we-are-area .right-area .header h1{
+    text-transform: uppercase;
+
+}
+.who-we-are-area .right-area p{
+    line-height: 1.7;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.63);
+}
+.who-we-are-area .right-area .learn-more-btn{
+    background-color: #373737;
+    padding: 12px 25px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.our-mission-main-container {
+    display: flex;
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+.our-mission-main-container .left-container{
+    width: 40%;
+}
+
+.our-mission-main-container .right-container {
+    width: 60%;
+}
+.our-mission-main-container .left-container .header h1{
+    text-transform: uppercase;
+}
+
+.our-mission-main-container .left-container p{
+    line-height: 1.7;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.63);   
+}
+
+.learn-more-btn{
+    background-color: #373737;
+    padding: 12px 25px;
+    color: #fff;
+    margin-top: 20px;
+}
+.our-mission-main-container .right-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.our-mission-main-container .right-container .vertical-image{
+    width: 50%;
+    background-image: url("../images/about_3.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.our-mission-main-container .right-container .horizontal-image{
+    width: 32%;
+    height:250px;
+    background-image: url("../images/about_4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 20%;
+}

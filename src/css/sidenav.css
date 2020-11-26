@@ -10,12 +10,15 @@
     transform: translateX(100vw);
     overflow-y: auto !important;
     -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    transition: all .5s ease;
+    margin-top: 90px;
 }
 .sidenav-main-container.open{
     transform: translateX(0vw);
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
+    overflow-y: scroll !important;
+    padding-bottom: 50px;
 
 }
 .sidenav-main-container .side-bar-header{
@@ -107,4 +110,12 @@
     width: 100%;
     height: 100%;
     z-index: 99999;
+}
+
+
+
+/* scrolling effect  */
+
+.sidenav-main-container.scrolling {
+    margin-top: 0px;    
 }
