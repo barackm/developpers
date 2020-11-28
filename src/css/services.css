@@ -1,0 +1,119 @@
+.services-main-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    align-items: center;
+    position: relative;
+}
+.responsive-image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* bottom: 200px; */
+    top: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 100%;
+    background-size: 100%;
+
+}
+.services-main-content {
+    padding-top: 150px;
+}
+.services-main-content .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-main-content .header h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    position: relative;
+}
+
+.services-main-content .header h1::before{
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    border-bottom: 5px solid #000;
+    width: 20%;
+    left: 40%;  
+}
+
+.services-items{
+    width: 60%;
+    min-height: 550px;
+    background-image: url("../images/map_bg.png");
+    background-size: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    align-items: center;
+    top: 663px;
+    left: 236px;
+}
+
+.container-fluid, .text-center
+{
+    text-align: center;
+    padding: 30px 70px;
+    position: absolute;
+    padding-top: 750px;
+}
+.col-md-4, .col-lg-4, .col-xs-12, .col-sm-12
+{
+    padding: 8px 50px;
+}
+p
+{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9em;
+}
+h3
+{
+    font-size: 1em;
+}
+.row
+{
+    text-align: center;
+    padding: 0px 10px;
+}
+.chap
+{
+    margin-top: 20px;
+    margin-bottom: 45px;
+    color: gray;
+}
+article
+{
+    padding: 5px 10px;
+}    
+article:hover
+{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: rgba(255, 255, 255, 0.836);
+}
+#explore
+{
+    text-align: center;
+    display: block;
+    padding: 13px 30px;
+    font-size: 1em;
+    border: solid 1px;
+    background-color: rgb(39, 35, 35);
+    color: floralwhite;
+}
+button
+{
+    margin: 30px 500px 25px;
+}
+svg
+{
+    font-size: 40%;
+    color: rgb(14, 14, 14);
+}
